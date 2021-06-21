@@ -3,4 +3,4 @@ kind: ConfigMap
 metadata:
   name: guestbook
 data:
-  name: ahmed
+  name: nabih
