@@ -16,6 +16,8 @@ spec:
       release: {{ .Release.Name }}
   template:
     metadata:
+      annotations:
+        rollme: {{ randAlphaNum 5 | quote }}
       labels:
         app: {{ template "helm-guestbook.name" . }}
         release: {{ .Release.Name }}
